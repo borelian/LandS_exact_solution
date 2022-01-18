@@ -1,5 +1,5 @@
 # The exact solution of LandS
-This page is devoted to provide a proof on the exact solution of the classical stochastic optimization problem LandS  (Louveaux & Smeer, 1988) on its most common version presented by Linderoth et al (2006) and available on $[this link](http://pages.cs.wisc.edu/~swright/stochastic/sampling/). I also write thsi page as a way to encourage other researchers to try the Adaptive Partition Method on their stochastic problems.
+This page is devoted to provide a proof on the exact solution of the classical stochastic optimization problem LandS  (Louveaux & Smeer, 1988) on its most common version presented by Linderoth et al (2006) and available on [this link](http://pages.cs.wisc.edu/~swright/stochastic/sampling/). I also write this page as a way to encourage other researchers to try the Adaptive Partition Method on their stochastic problems.
 
 ## What is LandS?
 LandS is an energy planning investment problem, where the goal is to decide the capacities of four new plants while minimizing allocation and operational costs. The problem can be formulated as its deterministic equivalent formulation:
@@ -25,6 +25,6 @@ In this file, we present a partition of the 10<sup>6</sup> scenarios into 1041 s
 You can find here a Jupyter notebook to validate this result. It requires the Python interface of QSopt from https://github.com/jonls/python-qsoptex.
   
 ## How did you get this partition and this idea?
-Using the marvelous **Adaptive Partition Method** (Song & Luedtke, 20XX, Ramirez-Pico & Moreno, 2022) for two-stage stochastic problems. Starting will all scenarios aggregated into a single one, you solve the problem and get a candidate solution *x<sup>(t)</sup>*. Then, you solve the subproblems and refine the partition by grouping scenarios with the same optimal duals, and iterate.  On the LandS problem, it only requires 8 iterations!.
+Using the marvelous **Adaptive Partition Method** (Song & Luedtke, 20XX, [Ramirez-Pico & Moreno, 2022](https://doi.org/10.1007/s10107-020-01609-8)) for two-stage stochastic problems. Starting will all scenarios aggregated into a single one, you solve the problem and get a candidate solution *x<sup>(t)</sup>*. Then, you solve the subproblems and refine the partition by grouping scenarios with the same optimal duals, and iterate.  On the LandS problem, it only requires 8 iterations!.
 
 You can find here a Jupyter notebook that solve this problem using the Adaptive Partition Method. It requires Gurobi (https://www.gurobi.com) as solver. 

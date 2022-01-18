@@ -20,7 +20,9 @@ where *S* is a set of scenarios. In [Linderoth et al (2006)](https://dx.doi.org/
 ## How can I validate that this is true?
 Well, using some aggregations and an exact optimization software like QSopt_ex (Espinoza et al), available here (https://github.com/jonls/qsopt-ex).
   
-In this file, we present a partition of the 10<sup>6</sup> scenarios into 1374 subsets. For each subset *P*, we present the corresponding average demand *d<sub>j</sub><sup>P</sup>* and its probability (*|P|/10<sup>6</sup>*). If you solve the problem for these aggregated scenarios, you get a lower bound of the optimal solution (because this is equivalent to aggregate the last constraints of the problem for each subset *P*).  On the other hand, if you fix the solution *x*=(0.84, 3.40, 1.88, 5.88), then you can solve the remaining problem (more simply, solve each subproblem *y<sup>s</sup>* separately) and get an upper bound of the optimal solution. You should get the same bounds, showing the optimality of x<sup>*</sup>! **Very important: You need to do this using an exact solver, like QSopt_ex,** which use rational numbers to avoid rounding errors. 
+In this file, we present a partition of the 10<sup>6</sup> scenarios into 1374 subsets. For each subset *P*, we present the corresponding average demand *d<sub>j</sub><sup>P</sup>* and its probability (*|P|/10<sup>6</sup>*). If you solve the problem for these aggregated scenarios, you get a lower bound of the optimal solution (because this is equivalent to aggregate the last constraints of the problem for each subset *P*).  On the other hand, if you fix the solution *x*=(0.84, 3.40, 1.88, 5.88), then you can solve the remaining problem (more simply, solve each subproblem *y<sup>s</sup>* separately) and get an upper bound of the optimal solution. You should get the same bounds, showing the optimality of x<sup>*</sup>! 
+  
+ **Very important: You need to do this using an exact solver, like QSopt_ex,** which use rational numbers to avoid rounding errors. 
   
 You can find here a Jupyter notebook to validate this result. It requires the Python interface of QSopt_ex from https://github.com/jonls/python-qsoptex.
   

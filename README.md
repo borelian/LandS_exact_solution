@@ -1,11 +1,17 @@
 # The exact solution of LandS
-This page is devoted to provide a proof on the exact solution of the classical stochastic optimization problem LandS  (Louveaux & Smeer, 1988) on the most common version presented by Linderoth et al (2006). 
+This page is devoted to provide a proof on the exact solution of the classical stochastic optimization problem LandS  (Louveaux & Smeer, 1988) on its most common version presented by Linderoth et al (2006) and available on this link: http://pages.cs.wisc.edu/~swright/stochastic/sampling/ 
 
 ## What is LandS?
 LandS is an energy planning investment problem, where the goal is to decide the capacities of four new plants while minimizing allocation and operational costs. The problem can be formulated as its deterministic equivalent formulation:
 
-<eq>
-
+![](master_problem.svg)
+<!---
+[MP] := \min_{x,y \geq 0}   \sum_{i=1}^4  c_i x_i &+ \sum_{s\in S} p_s \sum_{i=1}^3 \sum_{j=1}^3f_{ij}y_{ij}^s\\
+\sum_{i=1}^4  x_i &\geq m\\
+\sum_{i=1}^4 c_ix_i &\leq b\\
+\sum_{j=1}^3 y_{ij}^s &\leq x_i ~\forall~ i\in 1\ldots 4, \forall s\in S\\
+\sum_{i=1}^4 y_{ij}^s &\geq d_j^s  ~\forall~ j\in 1\ldots 3,  \forall s\in S
+-->
 where *S* is a set of scenarios. In Linderoth et al (2006), they propose to solve this problem where for each plant *j* the demand *d<sub>j</sub><sup>s</sup>* has 100 equiprobable values 0.04*(i-1) for i=1...100. So the total number of scenarios is 10<sup>6. 
 
 ## Which is the optimal solution?

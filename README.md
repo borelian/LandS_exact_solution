@@ -35,7 +35,7 @@ I'm Eduardo Moreno, professor at Universidad Adolfo Ibáñez, Santiago, Chile. P
 
 ### Bibliography
   
-- Linderoth, J., Shapiro, A., & Wright, S. (2006). The empirical behavior of sampling methods for stochastic programming. Annals of Operations Research, 142(1), 215-241.
+- Linderoth, J., Shapiro, A., & Wright, S. (2006). The empirical behavior of sampling methods for stochastic programming. Annals of Operations Research, 142(1), 215-241. DOI:10.1007/s10479-006-6169-8
 - Louveaux, F.V. & Smeers, Y. (1988). Optimal investments for electricity generation: A stochastic model and a test problem. In Y. Ermoliev and R. J.-B. Wets, editors, Numerical techniques for stochastic optimization problems, pages 445–452. Springer-Verlag.
-- Ramirez-Pico, C., & Moreno, E. (2021). Generalized adaptive partition-based method for two-stage stochastic linear programs with fixed recourse. Mathematical Programming, to apper. 
-- Song, Y., & Luedtke, J. (2015). An adaptive partition-based approach for solving two-stage stochastic programs with fixed recourse. SIAM Journal on Optimization, 25(3), 1344-1367.
+- Ramirez-Pico, C., & Moreno, E. (2021). Generalized adaptive partition-based method for two-stage stochastic linear programs with fixed recourse. Mathematical Programming, to apper. DOI:10.1007/s10107-020-01609-8
+- Song, Y., & Luedtke, J. (2015). An adaptive partition-based approach for solving two-stage stochastic programs with fixed recourse. SIAM Journal on Optimization, 25(3), 1344-1367. DOI:10.1137/140967337

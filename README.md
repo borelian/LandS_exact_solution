@@ -12,7 +12,7 @@ LandS is an energy planning investment problem, where the goal is to decide the 
 \sum_{j=1}^3 y_{ij}^s &\leq x_i ~\forall~ i\in 1\ldots 4, \forall s\in S\\
 \sum_{i=1}^4 y_{ij}^s &\geq d_j^s  ~\forall~ j\in 1\ldots 3,  \forall s\in S
 -->
-where *S* is a set of scenarios. In [Linderoth et al (2006)](https://dx.doi.org/10.1007/s10479-006-6169-8), authors propose to solve this problem where for each plant *j=1..3* the demand *d<sub>j</sub><sup>s</sup>* has 100 equiprobable scenarios with values 0.04(*i*-1) for *i*=1...100. So the total number of scenarios is 10<sup>6</sup>.  Since is not possible (nowadays) to solve this formulation with such  number of scenarios, this problem has been a classical instance to benchmark different methods and approximations for stochastic programming.
+where *S* is a set of scenarios. In [Linderoth et al (2006)](https://dx.doi.org/10.1007/s10479-006-6169-8), authors propose to solve this problem where for each plant *j=1..3* the demand *d<sub>j</sub><sup>s</sup>* has 100 equiprobable scenarios with values 0.04(*i*-1) for *i*=1...100. So the total number of scenarios is 10<sup>6</sup>.  Since is not possible (nowadays) to solve this formulation with such  number of scenarios directly, this problem has been a classical instance to benchmark different methods and approximations for stochastic programs.
 
 ## Which is the optimal solution?
   The optimal solution is, as expected, **x<sup>*</sup>=(0.84, 3.40, 1.88, 5.88)** and the exact optimal value is **225.6294001**.

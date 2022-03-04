@@ -22,7 +22,7 @@ Well, using some aggregations and an exact optimization software like QSopt_ex (
   
 In this file, we present a partition of the 10<sup>6</sup> scenarios into 1374 subsets. For each subset *P*, we present the corresponding average demand *d<sub>j</sub><sup>P</sup>* and its probability (*|P|/10<sup>6</sup>*). If you solve the problem for these aggregated scenarios, you get a lower bound of the optimal solution (because this is equivalent to aggregate the last constraints of the problem for each subset *P*).  On the other hand, if you fix the solution *x*=(0.84, 3.40, 1.88, 5.88), then you can solve the remaining problem (more simply, solve each subproblem *y<sup>s</sup>* separately) and get an upper bound of the optimal solution. You should get the same bounds, showing the optimality of x<sup>*</sup>! 
   
- **Very important: You need to do this using an exact solver, like QSopt_ex,** which use rational numbers to avoid rounding errors. 
+ **Very important:  To do this, an exact solver is needed, like QSopt_ex,** which use rational numbers to avoid rounding errors. 
   
 You can find here a Jupyter notebook to validate this result. It requires the Python interface of QSopt_ex from https://github.com/jonls/python-qsoptex.
   
@@ -43,6 +43,7 @@ I'm Eduardo Moreno, professor at Universidad Adolfo Ibáñez, Santiago, Chile. P
 - Louveaux, F.V. & Smeers, Y. (1988). Optimal investments for electricity generation: A stochastic model and a test problem. In Y. Ermoliev and R. J.-B. Wets, editors, _Numerical techniques for stochastic optimization problems_, pages 445–452. Springer-Verlag.
 - Pay, B.S. & Song, Y. (2020). Partition-based  decomposition  algorithms  for  two-stage  stochastic  integer  programs with  continuous  recourse. _Annals  of  Operations  Research_, 284:583—604. [DOI:10.1007/s10479-017-2689-7](https://dx.doi.org/10.1007/s10479-017-2689-7)
 - Ramirez-Pico, C. & Moreno, E. (2021). Generalized adaptive partition-based method for two-stage stochastic linear programs with fixed recourse. _Mathematical Programming_, to appear. [DOI:10.1007/s10107-020-01609-8](https://dx.doi.org/10.1007/s10107-020-01609-8)
+- Ramirez-Pico, C., Ljubić, I. & Moreno, E. (2022). Benders Adaptive-Cuts Method for Two-Stage Stochastic Programs. _Submitted_. Available at [arXiv:2203.00752](https://arxiv.org/abs/2203.00752)
 - Siddig, M. & Song, Y. (2022) Adaptive partition-based SDDP algorithms for multistage stochastic linear programming. _Computational Optimization and Applications_ 81:201–250. [DOI:10.1007/s10589-021-00323-1](https://dx.doi.org/10.1007/s10589-021-00323-1)
 - Song, Y. & Luedtke, J. (2015). An adaptive partition-based approach for solving two-stage stochastic programs with fixed recourse. _SIAM Journal on Optimization_, 25(3), 1344-1367. [DOI:10.1137/140967337](https://dx.doi.org/10.1137/140967337)
 - van Ackooij, W., de Oliveira, W. & Song, Y. (2018). Adaptive partition-based level decomposition methods for solving two-stage stochastic programs with fixed recourse. _INFORMS Journal on Computing_, 30(1):57–70. [DOI:10.1287/ijoc.2017.0765](https://dx.doi.org/10.1287/ijoc.2017.0765)
